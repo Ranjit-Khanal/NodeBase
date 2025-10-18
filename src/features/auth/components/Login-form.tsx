@@ -70,7 +70,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-4">
+    <div className="flex  items-center justify-center  p-4">
       <div className="w-full max-w-md">
         <Card className="border-0 shadow-2xl">
           <CardHeader className="space-y-1 text-center pb-8">
