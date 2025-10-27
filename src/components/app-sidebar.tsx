@@ -97,12 +97,12 @@ export function AppSidebar() {
             <StarIcon className="h-4 w-4" />
             <span> Upgrade to Pro</span>
           </SidebarMenuButton>
-          <SidebarMenuButton tooltip="Billing" className="gap-x-4 h-10 px-4">
+          <SidebarMenuButton tooltip="Billing Portal" className="gap-x-4 h-10 px-4">
             <CreditCardIcon className="h-4 w-4" />
-            <span> Billing </span>
+            <span> Billing Portal</span>
           </SidebarMenuButton>
           <SidebarMenuButton
-            tooltip="Billing"
+            tooltip="Sign out"
             className="gap-x-4 h-10 px-4"
             onClick={async () => {
               await authClient.signOut({
