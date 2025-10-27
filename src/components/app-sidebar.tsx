@@ -52,15 +52,20 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader />
-      <SidebarMenuItem>
-        <SidebarMenuButton tooltip="Nodebase" asChild className="gap-x-4 h-10 px-4">
-          <Link href="/" className="flex self-center gap-3 mt-14" prefetch>
-            <Image src="/logo.svg" alt="nodebase" width={30} height={30} />
-            <span className="font-semibold text-xl">Nodebase</span>
-          </Link>
-        </SidebarMenuButton>
-      </SidebarMenuItem>
+      <SidebarHeader>
+        <SidebarMenuItem>
+          <SidebarMenuButton
+            tooltip="Nodebase"
+            asChild
+            className="gap-x-4 h-10 px-4"
+          >
+            <Link href="/" className="flex self-center gap-3 mt-14" prefetch>
+              <Image src="/logo.svg" alt="nodebase" width={30} height={30} />
+              <span className="font-semibold text-xl">Nodebase</span>
+            </Link>
+          </SidebarMenuButton>
+        </SidebarMenuItem>
+      </SidebarHeader>
       <SidebarContent>
         {menuItems.map((group) => (
           <SidebarGroup key={group.title}>
@@ -68,7 +73,7 @@ export function AppSidebar() {
               <SidebarMenuItem key={item.title} className="p-1">
                 <SidebarMenuButton
                   tooltip={item.title}
-                  isActive={ pathname === item.url }
+                  isActive={pathname === item.url}
                   asChild
                   className="gap-x-4 h-10 px-4"
                 >
